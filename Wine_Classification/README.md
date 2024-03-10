@@ -1,4 +1,4 @@
-# Wine Classification Project
+# Wine Classification with K-Nearest Neighbors (KNN)
 
 This project focuses on building a classification model to predict the class of wines based on various features. The dataset used in this project is the Wine Dataset from the scikit-learn library.
 

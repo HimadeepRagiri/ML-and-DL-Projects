@@ -1,4 +1,4 @@
-# Credit Card Fraud Detection
+# Credit Card Fraud Detection with Logistic Regression
 
 This repository contains code for detecting fraudulent credit card transactions using machine learning, specifically logistic regression.
 

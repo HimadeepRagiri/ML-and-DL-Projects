@@ -1,2 +1,1 @@
-creditcard filter=lfs diff=lfs merge=lfs -text
-C:/Users/bunny/OneDrive/Documents/GitHub/ML-and-DL-Projects/Machine[[:space:]]Learning[[:space:]]Projects/Credit_Card_Fraud_Detection filter=lfs diff=lfs merge=lfs -text
+*.csv filter=lfs diff=lfs merge=lfs -text

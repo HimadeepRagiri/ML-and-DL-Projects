@@ -40,4 +40,4 @@ This repository contains code for detecting fraudulent credit card transactions 
 
 ## Contributions
 
-Contributions to this project are welcome. You can suggest improvements, report issues, or create pull requests.
+Contributions to this project are welcome. You can suggest improvements, report issues, or create pull requests. 

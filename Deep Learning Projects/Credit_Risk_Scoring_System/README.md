@@ -10,7 +10,7 @@ This project involves a credit risk scoring system that utilizes machine learnin
 - [Model Training](#model-training)
 - [Results and Evaluation](#results-and-evaluation)
 - [Dependencies](#dependencies)
-- [key Files](#key-files)
+- [Project Structure](#project-structure)
 - [Steps To Run](#steps-to-run)
 
 ## Project Overview
@@ -82,26 +82,107 @@ This project requires the following libraries:
 
 - `numpy`
 - `pandas`
-- `matplotlib`
-- `seaborn`
 - `scikit-learn`
 - `torch`
 - `tqdm`
 
-Install the required libraries using pip:
+Install the required libraries using `pip install -r requirements.txt`
 
-## Key Files
+## Project Structure
 
-- **`Credit_Risk_Scoring_System.ipynb`**: The Jupyter Notebook containing the full code for data preprocessing, model training, and evaluation.
-- **`Credit_Risk_Scoring_System.csv`**: The dataset used for training and testing the model.
-- **`credit_risk_model.pth`**: The saved model weights after training, which you can use to load the trained model for predictions or further training.
-
-### Dataset Download
-The dataset used in this project is available for download here:
-
-[Download Credit_Risk_Scoring_System.csv](https://drive.google.com/file/d/1-5tkL_MyhCIN0itUzoLgfW_J1qeEeIPe/view?usp=sharing)
+- `data/`: This folder contains a **`dataset_info.md`** file with instructions on how to download the dataset from Kaggle. The raw data files are not included in the repository due to size constraints.
+- `notebooks/`: Contains Jupyter Notebooks with exploratory data analysis (EDA), model training, and evaluation.
+- `src/`: Contains Python scripts for data preprocessing, model building, and utility functions.
+- `main.py`: Main script to execute the model pipeline.
+- `model.pth`: Saved model checkpoint (trained model) for inference or further training.
 
 ## Steps to Run
-1. Clone this repository.
-2. Install the required libraries:
-3. Open and run the notebook: `Credit_Risk_Scoring_System.ipynb`.
+
+Follow these steps to run the project on your local machine:
+
+1. **Clone the Repository**:
+   - Clone the project repository to your local machine:
+     ```bash
+     git clone <repository_url>
+     ```
+
+2. **Install Dependencies**:
+   - Install the required libraries by running the following command:
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+3. **Prepare the Dataset**:
+   - Ensure that you have the dataset (CSV file) in the `data/` directory. If not, download the dataset from the source (if available) and place it in the `data/` folder.
+
+4. **Run the Jupyter Notebooks** (Optional):
+   - If you prefer to explore the data and model in a Jupyter Notebook, navigate to the `notebooks/` directory and open the notebook files (`EDA`, `Model_Training`, etc.) in Jupyter Notebook:
+     ```bash
+     jupyter notebook
+     ```
+   - The notebooks include:
+     - **Exploratory Data Analysis (EDA)**: For visualizing the dataset, understanding distributions, and finding patterns.
+     - **Model Training**: For training the neural network and evaluating its performance.
+
+5. **Running the Model Training Using Python Files**:
+
+   - The project consists of different Python files that handle different stages of the pipeline: preprocessing, model building, training, and evaluation. Here's how to run everything by using them:
+   
+     1. **Data Preprocessing**:
+        - The preprocessing steps are defined in the `src/data_preprocessing.py` file. You can import and call the functions from this file in `main.py` to preprocess the dataset.
+        - It handles:
+          - Missing data imputation.
+          - Feature scaling (standardization).
+          - Encoding categorical features (label and one-hot encoding).
+          - Splitting data into training and testing sets.
+
+     2. **Utility Functions**:
+        - The `src/utils.py` file contains utility functions such as the `load_checkpoint()` function for loading saved models and checkpoints. It also contains other helper functions for logging and saving models.
+
+     3. **Model Building**:
+        - The model architecture is defined in the `src/model.py` file, where a neural network is created using the PyTorch library.
+        - It defines the architecture (input layer, hidden layers, output layer) and the forward pass method.
+        - You can modify this file to experiment with different network architectures if needed.
+      
+     4. **Training and Evaluation**:
+        - The main model training logic is handled in `main.py`. This script:
+          - Loads and preprocesses the dataset.
+          - Initializes the model, optimizer, and loss function.
+          - Trains the model by calling the functions from `src/model.py` and `src/data_preprocessing.py`.
+          - Evaluates the model's performance using various metrics like accuracy, precision, recall, and F1 score.
+          - Saves the trained model checkpoint.
+
+     5. **Loading a Saved Model**:
+        - If you want to load a previously trained model and make predictions, you can use the `load_checkpoint()` function from `src/utils.py` in `main.py`. This function will load the model's state, optimizer state, and training epoch.
+        - Example:
+          ```python
+          checkpoint_path = 'Deep Learning Projects/Credit_Risk_Scoring_System/model.pth'
+          model, optimizer, scheduler, epoch, loss = load_checkpoint(model, optimizer, scheduler, checkpoint_path)
+          ```
+
+6. **Run the `main.py` Script**:
+   - To train the neural network model, run the `main.py` script:
+     ```bash
+     python main.py
+     ```
+   - The script will:
+     - Preprocess the data using the functions defined in `src/data_preprocessing.py`.
+     - Train the neural network model using the architecture defined in `src/model.py`.
+     - Evaluate the trained model and print the results (accuracy, precision, recall, etc.).
+     - Save the model checkpoint.
+
+7. **Model Inference**:
+   - Once the model is trained and the checkpoint is saved, you can use the trained model for inference (predicting loan statuses on new data).
+   - To load the model and use it for inference, you can use the `load_checkpoint()` function in your inference code.
+   
+8. **Evaluate the Model**:
+   - After training, the evaluation metrics (accuracy, precision, recall, F1 score, etc.) will be printed to the console. The confusion matrix and other visualizations can also be generated as described in the notebook or code files.
+
+9. **Experiment and Fine-Tune**:
+   - Feel free to experiment with hyperparameters (like learning rate, batch size, epochs) and model architecture to improve the results.
+
+**Note**: Ensure that your Python environment has the necessary dependencies installed and that the dataset is properly set up before running the scripts.
+
+
+
+

@@ -1,0 +1,6 @@
+flask
+flask-ngrok
+torch
+torchvision
+Pillow
+pyngrok

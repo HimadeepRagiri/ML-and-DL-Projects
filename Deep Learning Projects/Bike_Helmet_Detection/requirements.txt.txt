@@ -1,0 +1,5 @@
+flask==2.2.2
+flask-ngrok==0.0.25
+pyngrok==5.1.0
+ultralytics==8.0.0
+roboflow==1.0.1

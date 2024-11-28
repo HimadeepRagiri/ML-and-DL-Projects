@@ -30,7 +30,7 @@ Face_Recognition/
 │   └── webcam_recognition.py # Real-time webcam recognition script
 │   
 └── deployment/
-    ├── Face_Recognition.ipynb  # Web deployment Jupyter notebook
+    ├── app.py  # Web deployment Using Flask
     └── requirements.txt
 ```
 
@@ -85,7 +85,7 @@ python scripts/webcam_recognition.py
 
 ### Web Deployment
 
-Run the Jupyter notebook in the `deployment/` directory or use:
+Run app.py in the `deployment/` directory or use:
 ```bash
 flask run
 ```

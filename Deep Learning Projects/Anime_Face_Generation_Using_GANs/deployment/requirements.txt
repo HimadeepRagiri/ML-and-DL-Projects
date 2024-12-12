@@ -1,0 +1,6 @@
+flask==2.3.3
+pyngrok==5.1.0
+torch==2.1.0
+torchvision==0.15.0
+matplotlib==3.8.0
+Pillow==9.4.0

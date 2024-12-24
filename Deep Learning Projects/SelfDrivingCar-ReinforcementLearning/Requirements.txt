@@ -1,0 +1,9 @@
+stable-baselines3[extra]
+gymnasium[box2d]
+pygame
+moviepy
+swig
+torch
+numpy
+matplotlib
+opencv-python

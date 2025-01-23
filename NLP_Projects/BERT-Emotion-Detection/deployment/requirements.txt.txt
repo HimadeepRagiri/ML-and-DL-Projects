@@ -1,0 +1,7 @@
+flask==2.1.0
+pyngrok==5.1.0
+torch==1.10.0
+transformers==4.16.2
+accelerate==0.10.0
+numpy==1.21.5
+scikit-learn==1.0.2

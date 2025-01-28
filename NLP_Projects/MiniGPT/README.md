@@ -38,10 +38,6 @@ Training_Loss_Convergence
 ## ⚙️ Installation
 
 1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/minigpt.git
-cd minigpt
-```
 
 2. Create and activate a virtual environment (optional but recommended):
 ```bash

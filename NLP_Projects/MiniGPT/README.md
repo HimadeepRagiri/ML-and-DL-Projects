@@ -161,8 +161,8 @@ hp.heads = 8
 
 ## 📚 References
 
-1. Vaswani, A., et al. (2017). [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
-2. Radford, A., et al. (2018). [Improving Language Understanding by Generative Pre-Training](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf)
+1. Vaswani, A., et al. (2017). [Attention Is All You Need](https://arxiv.org/pdf/1706.03762)
+2. Radford, A., et al. (2018). [Improving Language Understanding by Generative Pre-Training](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf)
 
 
 ## ✨ Acknowledgments

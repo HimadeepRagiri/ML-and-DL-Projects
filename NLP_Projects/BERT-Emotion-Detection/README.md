@@ -156,7 +156,6 @@ To launch the Gradio web interface:
 cd deployment
 python app.py
 ```
-Access the interface at http://localhost:7860
 
 Key Features:
 - Real-time text input

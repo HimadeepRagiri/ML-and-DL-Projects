@@ -10,10 +10,5 @@ tqdm>=4.65.0
 scikit-learn>=1.2.0
 matplotlib>=3.7.0
 
-# Interface/Visualization
-gradio>=3.36.0
+# Visualization
 tensorboard>=2.12.0
-
-# Optional (for GPU support - use appropriate version from pytorch.org)
-# torchvision>=0.15.0
-# torchaudio>=2.0.0

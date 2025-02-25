@@ -42,8 +42,11 @@ Named_Entity_Recognition_with_BiLSTM/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/HimadeepRagiri/ML-and-DL-Projects.git
+git clone --no-checkout https://github.com/HimadeepRagiri/ML-and-DL-Projects.git
 cd ML-and-DL-Projects
+git sparse-checkout init --cone
+git sparse-checkout set NLP_Projects/Named_Entity_Recognition_with_BiLSTM
+cd NLP_Projects/Named_Entity_Recognition_with_BiLSTM
 ```
 
 2. Create and activate a virtual environment (optional but recommended):

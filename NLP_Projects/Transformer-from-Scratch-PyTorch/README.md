@@ -72,6 +72,13 @@ To use this project, you will need Python and PyTorch installed. You can install
 - PyTorch 1.9.0+
 
 ### Step 1: Clone the repository
+```bash
+git clone --no-checkout https://github.com/HimadeepRagiri/ML-and-DL-Projects.git
+cd ML-and-DL-Projects
+git sparse-checkout init --cone
+git sparse-checkout set NLP_Projects/Transformer-from-Scratch-PyTorch
+cd NLP_Projects/Transformer-from-Scratch-PyTorch
+```
 
 ### Step 2: Install dependencies
 

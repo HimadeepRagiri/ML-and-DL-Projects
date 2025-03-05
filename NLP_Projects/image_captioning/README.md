@@ -52,7 +52,14 @@ image_captioning/
 - See requirements.txt for complete list
 
 ## Installation
-1. Clone the repository
+1. Clone the repository:
+```bash
+git clone --no-checkout https://github.com/HimadeepRagiri/ML-and-DL-Projects.git
+cd ML-and-DL-Projects
+git sparse-checkout init --cone
+git sparse-checkout set NLP_Projects/image_captioning
+cd NLP_Projects/image_captioning
+```
 
 2. Create and activate a virtual environment (optional but recommended):
 ```bash

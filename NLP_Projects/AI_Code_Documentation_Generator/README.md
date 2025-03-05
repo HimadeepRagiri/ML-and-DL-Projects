@@ -56,8 +56,11 @@ AI_Code_Documentation_Generator/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/HimadeepRagiri/ML-and-DL-Projects.git
-cd ML-and-DL-Projects.git
+   git clone --no-checkout https://github.com/HimadeepRagiri/ML-and-DL-Projects.git
+   cd ML-and-DL-Projects
+   git sparse-checkout init --cone
+   git sparse-checkout set NLP_Projects/AI_Code_Documentation_Generator
+   cd NLP_Projects/AI_Code_Documentation_Generator
 ```
 
 2. Create a virtual environment (optional but recommended):

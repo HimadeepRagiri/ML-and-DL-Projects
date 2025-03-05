@@ -38,6 +38,13 @@ Training_Loss_Convergence
 ## ⚙️ Installation
 
 1. Clone the repository:
+```bash
+git clone --no-checkout https://github.com/HimadeepRagiri/ML-and-DL-Projects.git
+cd ML-and-DL-Projects
+git sparse-checkout init --cone
+git sparse-checkout set NLP_Projects/MiniGPT
+cd NLP_Projects/MiniGPT
+```
 
 2. Create and activate a virtual environment (optional but recommended):
 ```bash

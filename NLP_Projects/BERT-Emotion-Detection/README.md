@@ -68,6 +68,13 @@ BERT-Emotion-Detection/
 
 ## Installation
 1. Clone the repository:
+```bash
+git clone --no-checkout https://github.com/HimadeepRagiri/ML-and-DL-Projects.git
+cd ML-and-DL-Projects
+git sparse-checkout init --cone
+git sparse-checkout set NLP_Projects/BERT-Emotion-Detection
+cd NLP_Projects/BERT-Emotion-Detection
+```
 
 2. Create virtual environment (recommended):
 ```bash

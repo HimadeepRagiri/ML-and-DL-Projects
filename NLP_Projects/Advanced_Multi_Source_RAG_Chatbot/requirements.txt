@@ -1,0 +1,11 @@
+torch
+transformers
+bitsandbytes
+langchain
+langchain_community
+faiss-cpu
+gradio
+wikipedia
+yt-dlp
+pymupdf
+sentence-transformers

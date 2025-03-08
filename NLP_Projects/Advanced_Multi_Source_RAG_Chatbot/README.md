@@ -212,6 +212,6 @@ Please ensure your code follows the existing structure and includes appropriate 
 ---
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](ML-and-DL-Projects/LICENSE) file for details.
 
 ---

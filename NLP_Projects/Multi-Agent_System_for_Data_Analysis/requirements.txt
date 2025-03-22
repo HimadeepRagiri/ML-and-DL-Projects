@@ -1,0 +1,11 @@
+bitsandbytes
+pandas
+torch
+matplotlib
+seaborn
+pydantic
+transformers
+scipy
+gradio
+json
+re

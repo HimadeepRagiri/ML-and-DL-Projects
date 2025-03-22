@@ -63,6 +63,7 @@ In the NLP domain, I explore the fascinating capabilities of language models and
 - **RAG_Chatbot**
 - **Transformer-from-Scratch-PyTorch**
 - **image_captioning**
+- **Multi-Agent System for Data Analysis**  
 
 These projects delve into natural language understanding and generation, showcasing the power of modern NLP frameworks and models to transform raw text into actionable insights.
 

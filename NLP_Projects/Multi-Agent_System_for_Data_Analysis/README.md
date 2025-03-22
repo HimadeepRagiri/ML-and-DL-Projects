@@ -38,7 +38,7 @@
 
 Watch a video demonstration of the project in action:
 
-<video controls src="images&videos/Agent_System_for_Data_Analysis_Demo.mp4" width="600"></video>
+[Click here to view the demo video](images&videos/Agent_System_for_Data_Analysis_Demo.mp4)
 
 For detailed examples, see the [Screenshots](#screenshots) section below.
 

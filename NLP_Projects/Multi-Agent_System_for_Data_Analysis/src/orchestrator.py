@@ -1,4 +1,4 @@
-from src.agents import OrchestratorOutput
+from src.agent_outputs import OrchestratorOutput
 from src.utils import extract_json
 from src.models import call_llm
 import re

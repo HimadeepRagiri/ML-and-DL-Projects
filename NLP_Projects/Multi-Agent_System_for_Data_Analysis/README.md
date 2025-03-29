@@ -124,7 +124,7 @@ Multi-Agent_System_for_Data_Analysis/
 │   ├── config.py           # Model and token configuration
 │   ├── models.py           # Model loading and LLM interaction
 │   ├── tools.py            # Data processing and analysis tools
-│   ├── agents.py           # Agent definitions and logic
+│   ├── agent_outputs.py    # Agent output definitions and logic
 │   ├── orchestrator.py     # Orchestrator agent for task delegation
 │   └── utils.py            # Utility functions (e.g., JSON parsing)
 │

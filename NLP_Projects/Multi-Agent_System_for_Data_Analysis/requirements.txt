@@ -7,4 +7,3 @@ pydantic
 transformers
 scipy
 gradio
-re

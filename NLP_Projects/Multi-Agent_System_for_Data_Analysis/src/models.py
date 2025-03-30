@@ -2,7 +2,12 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from src.config import HF_TOKEN, MODEL_NAME, BNB_CONFIG, DEVICE
 import torch
 
+#Declare globals
+model = None
+tokenizer = None
+
 def load_model_and_tokenizer():
+    global model, tokenizer
     model = AutoModelForCausalLM.from_pretrained(
         MODEL_NAME,
         quantization_config=BNB_CONFIG,
@@ -14,6 +19,7 @@ def load_model_and_tokenizer():
 
 # Function to call the LLM
 def call_llm(prompt: str, max_tokens: int = 500) -> str:
+    global model, tokenizer
     # Construct a prompt that strongly emphasizes JSON response format
     full_prompt = (
         f"[INST] {prompt}\n\n"
@@ -24,7 +30,7 @@ def call_llm(prompt: str, max_tokens: int = 500) -> str:
     )
 
     # Tokenize and generate response
-    inputs = tokenizer(full_prompt, return_tensors="pt").to(device)
+    inputs = tokenizer(full_prompt, return_tensors="pt").to(DEVICE)
     with torch.no_grad():
         outputs = model.generate(
             **inputs,

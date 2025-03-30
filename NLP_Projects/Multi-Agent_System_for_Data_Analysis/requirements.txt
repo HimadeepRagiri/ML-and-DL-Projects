@@ -1,4 +1,6 @@
 bitsandbytes
+accelerate
+dotenv
 pandas
 torch
 matplotlib

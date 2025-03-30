@@ -7,5 +7,4 @@ pydantic
 transformers
 scipy
 gradio
-json
 re
